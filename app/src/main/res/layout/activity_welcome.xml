@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="@color/back">
+    <TextView
+        android:id="@+id/textView"
+        android:padding="8dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:text="Select a Search Engine To Start"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="80dp"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:textColor="@color/text"
+            android:background="@drawable/round_button"
+            android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/epic"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/google"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginTop="56dp"
+        android:text="EpicSearch"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/text"
+        android:background="@drawable/round_button"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/duck"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/epic"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:text="DuckDuckGo"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textColor="@color/text"
+        android:background="@drawable/round_button"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/duck"
+        android:weightSum="5"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/URL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/text"
+            android:layout_weight="4.5"
+            android:layout_marginRight="8dp"
+            />
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:textSize="16sp"
+            android:background="@drawable/round_button"
+            android:textColor="@color/text"
+            android:layout_weight="0.5"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
